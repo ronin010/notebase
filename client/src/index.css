@@ -1,0 +1,301 @@
+
+* {
+  font-family: 'Sen', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+#root {
+  height: 100vh;
+}
+
+.home-div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 210px;
+  flex-direction: column;
+  font-size: 20px;
+  background-image: url("https://hdqwalls.com/wallpapers/gradient-geometry-background-abstract-lu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.drawer-div {
+  width: 230px;
+  padding: 10px;
+  background-color: #160d16;
+  height: 100vh;
+}
+
+.drawer-header {
+  text-align: center;
+  text-decoration: underline;
+  color: #f50057;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px !important;
+  color:white !important;
+  cursor: pointer !important;
+}
+
+.account-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.account-info {
+  display: none;
+}
+
+.text-inputs {
+  width: 90%;
+  margin: 40px auto 0px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-link {
+  position:absolute;
+  width: 80%;
+  bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-link {
+  position:absolute;
+  width: 80%;
+  bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loading-div {
+  margin-top: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.new-note-div {
+  width: 80%;
+  margin: 100px auto 0px auto;
+  border: 1px solid #49334a;
+  border-radius: 8px;
+  height: 400px;
+  padding: 30px 10px 10px 10px;
+}
+
+.new-note-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 20px;
+  color:  #49334a;
+}
+
+.new-note-inputs {
+  width: 80%;
+  margin:  20px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-evenly;
+  width: 240px;
+  margin: 20px auto 0px auto;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 0px auto;
+  width: 70%;
+}
+
+.note-card {
+  width: 270px;
+  height: 216px;
+  border-radius: 8px;
+  color: #49334a;
+  padding: 20px;
+  margin: 0px auto 40px auto;
+  transition: box-shadow 10s;
+  border: 1px solid darkgray;
+}
+
+.note-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.card-header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-body {
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+.note-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.account-input {
+  text-align: center !important;
+}
+
+.account-settings {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.settings-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #49334a;
+  padding: 20px 0px;
+}
+
+.email-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.email-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.password-reset {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 160px auto 0px auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .submit-button {
+    width: 60%;
+  }
+
+  .note-input {
+    width: 257px;
+  }
+
+  .new-note-div {
+    width: 17%;
+  }
+
+  .add-button {
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .account-info {
+    display: flex;
+  }
+
+  .account-name {
+    display: inherit;
+    font-size: 20px;
+    color: #f50057;
+    margin-left: 10px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+
+  .account-img {
+    margin-right: 10px;
+  }
+
+  .account-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .note-card {
+    margin: 20px;
+  }
+
+  .note-div {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 60px 0px 60px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  #github-link {
+    margin-top: 20px;
+  }
+}
